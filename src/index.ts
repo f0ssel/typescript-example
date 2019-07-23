@@ -4,6 +4,7 @@ alias.addAliases({
 });
 import 'reflect-metadata';
 
+import Config from '@src/Base/Config';
 import { createExpressServer } from 'routing-controllers';
 import { Container } from 'typedi';
 import * as TypeORM from 'typeorm';
@@ -11,19 +12,11 @@ import * as TypeORM from 'typeorm';
 TypeORM.useContainer(Container);
 
 async function main() {
-    console.log(__dirname);
     await TypeORM.createConnection({
-        database: 'api',
+        ...Config.get('mysql'),
         entities: [
             __dirname + '/**/*.ENT.**',
          ],
-        host: 'localhost',
-        logging: true,
-        password: 'password',
-        port: 3306,
-        synchronize: true,
-        type: 'mysql',
-        username: 'root',
     });
     console.log('Database connection established');
 
