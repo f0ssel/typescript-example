@@ -3,8 +3,11 @@ version: '3'
 services:
 
   app:
-    build: ./
-    command: yarn run dev
+    build: 
+      context: ./
+      args:
+        NODE_ENV: development
+    command: yarn run dev:sever
     restart: always
     depends_on:
       - mysql
