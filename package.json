@@ -18,7 +18,7 @@
     "@types/module-alias": "^2.0.0",
     "@types/node": "^11.11.3",
     "body-parser": "^1.18.3",
-    "class-transformer": "^0.2.0",
+    "class-transformer": "^0.3.1",
     "class-validator": "^0.9.1",
     "express": "^4.16.4",
     "lodash": "^4.17.15",
