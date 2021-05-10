@@ -21,7 +21,7 @@
     "class-transformer": "^0.2.0",
     "class-validator": "^0.9.1",
     "express": "^4.16.4",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "module-alias": "^2.2.0",
     "mysql": "^2.16.0",
     "reflect-metadata": "^0.1.13",
